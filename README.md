@@ -2,8 +2,6 @@
 
 Introduction to docker. Developing a simple docker image for your own server.
 
-The russian version of the task can be found in the repository.
-
 ## Contents
 
 1. [Chapter I](#chapter-i)
