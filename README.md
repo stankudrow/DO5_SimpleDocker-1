@@ -17,7 +17,6 @@ Introduction to docker. Developing a simple docker image for your own server.
     3.5. [Dockle](#part-5-dockle) \
     3.6. [Basic Docker Compose](#part-6-basic-docker-compose)
 
-
 ## Chapter I
 
 ![simple_docker](misc/images/simple_docker.png)
@@ -32,13 +31,11 @@ Although the flow of the plot is far from straightforward, with many lyrical dig
 
 "Hmm... White whale..." - here you remember that during the long journey you were going to work on docker.
 
-
 ## Chapter II
 
 ### **nginx**
 
 **nginx** (pronounced "engine-x") is an open-source reverse proxy server for HTTP, HTTPS, etc. **nginx** is also used as a load balancer, web server and for HTTP caching. The **nginx** project focuses on high parallelism, high performance and low memory usage.
-
 
 **nginx** has one main process and several worker processes.
 The primary task of the main process is to read and check the configuration and manage the worker processes.
@@ -53,6 +50,7 @@ A container is a new "executable file" that includes all the dependencies the pr
 The main advantage of containerisation is the isolation of dependencies and a single, simple software start-up point.
 
 Basic terms:
+
 - Docker image - the "package" for the application and dependencies (including system ones).
 - Container - an instance of an image, i.e. a 'alive' image.
 
@@ -73,6 +71,7 @@ The *Dockerfile* is used to create an image. Each instruction in it creates a ne
 **Dockle** is a container image security checking tool that can be used to find vulnerabilities.
 
 Key features and benefits of **Dockle**:
+
 - searches for vulnerabilities in images
 - helps in creating a proper Dockerfile
 - easy to use, you only need to specify the image name
@@ -85,7 +84,6 @@ Docker Compose can be helpful if several services are used to keep the project r
 
 Docker Compose is used to simultaneously manage multiple containers that are part of an application.
 This tool offers the same features as Docker, but allows to work with more complex distributed applications, e.g. microservices.
-
 
 ## Chapter III
 
@@ -129,9 +127,10 @@ You chose a pretty simple **nginx**.
 ##### Check in any way that the container is running
 
 - Add the following screenshots to the report:
-    - the call and output of all commands used in this part of the task;
-    - **nginx** start page at *localhost:80* (address must be shown).
-    
+
+  - the call and output of all commands used in this part of the task;
+  - **nginx** start page at *localhost:80* (address must be shown).
+
 *Note:* **Don't upload heavy files (>10 mb) to git.**
 
 ## Part 2. Operations with container
@@ -155,10 +154,9 @@ Docker image and container are ready. Now we can look into **nginx** configurati
 ##### Check that *localhost:80/status* returns the **nginx** server status page
 
 - Add the following screenshots to the report:
-    - the call and output of all commands used in this part of the task;
-    - the contents of the created *nginx.conf* file;
-    - the **nginx** server status page at *localhost:80/status*.
-
+  - the call and output of all commands used in this part of the task;
+  - the contents of the created *nginx.conf* file;
+  - the **nginx** server status page at *localhost:80/status*.
 
 ## Part 3. Mini web server
 
@@ -219,6 +217,5 @@ Why not try experimenting with deploying a project consisting of several docker 
 ##### Stop all running containers
 ##### Build and run the project with the `docker-compose build` and `docker-compose up` commands
 ##### Check that the browser returns the page you wrote on *localhost:80* as before
-
 
 💡 [Tap here](https://forms.yandex.ru/cloud/6418195450569020f1f159c4/) **to leave your feedback on the project**. Pedago Team really tries to make your educational experience better.

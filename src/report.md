@@ -66,7 +66,7 @@ A [course](https://www.youtube.com/watch?v=dHsv8EnhSgQ&list=PLhgRAQ8BwWFa7ulOkX0
 3. Reloading (`docker exec nginxer2 nginx -s reload`) and checking the **localhost:80/status** (`curl localhost:80/status`):  
 ![new_nginx_results](part2/screenshots/part2_step03_nginx_new_status.png)
 
-4. Exporting the container into a **.tar** archive (``)  
+4. Exporting the container into a **.tar** archive (`docker export nginxer2 > nginxer.tar`)  
 ![container.tar](part2/screenshots/part2_step04_nginxer2_tar.png)
 
 5. Stopping containers, removing images and containers - cleansing routine.
